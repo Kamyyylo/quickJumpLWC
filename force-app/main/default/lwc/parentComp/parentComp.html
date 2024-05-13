@@ -1,0 +1,8 @@
+<template>
+    <c-child-comp onchildevent={handleChildEvent} parent-variable={parentVariable}></c-child-comp>
+    <c-child-comp onchildevent={handleChildEvent} parent-variable={parentVariable}></c-child-comp>
+    <c-child-comp onchildevent={handleChildEvent} parent-variable={parentVariable}></c-child-comp>
+    <lightning-button label="Change Value" onclick={changeChildsValue}></lightning-button>
+
+    <p>Value from child: {variableFromChild}</p>
+</template>

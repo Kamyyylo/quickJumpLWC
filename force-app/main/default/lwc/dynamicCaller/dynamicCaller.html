@@ -1,0 +1,7 @@
+<template>
+    <lightning-button label="Click to load the other component" onclick={changeComponent}></lightning-button>
+    <h1>Component below is loaded dynamically: </h1>
+    <div>
+        <lwc:component lwc:is={componentConstructor} lwc:spread={childProps}></lwc:component>
+    </div>
+</template>

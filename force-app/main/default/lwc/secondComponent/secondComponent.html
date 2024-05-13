@@ -1,0 +1,16 @@
+<template>
+    <h1>{secondInput}</h1>
+    <div class="slds-card">
+        <div lwc:if={isIf}>
+            Hello right now I'm in the first if
+        </div>
+        <div lwc:elseif={isElseIf}>
+            And now I'm in the else if
+        </div>
+        <div lwc:else>
+            And this is else
+        </div>
+        <lightning-button label="If" onclick={handleIf}></lightning-button>
+        <lightning-button label="Else If" onclick={handleElseIf}></lightning-button>
+    </div>
+</template>

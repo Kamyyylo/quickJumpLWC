@@ -1,0 +1,11 @@
+<template>
+    <lightning-input type="text" variant="standard" label="text input" value="Input Value 1"></lightning-input>
+    <lightning-input data-id="inputId" type="text" variant="standard" label="text input" value="Input Value 2"></lightning-input>
+    <lightning-input class="inputClass" type="text" variant="standard" label="text input" value="Input Value 3"></lightning-input>
+
+    <div lwc:ref="myDivRef">Text Inside div with REF</div>
+    <lightning-button label="Query Selectors" onclick={handleQuerySelectors}></lightning-button>
+    <lightning-button label="Navigate To Contact" onclick={handleNavigation}></lightning-button>
+
+    <lightning-formatted-url value="/003WU000001b4YoYAI" tooltip="This is a link" label="Go to contact" target="_blank"></lightning-formatted-url>
+</template>

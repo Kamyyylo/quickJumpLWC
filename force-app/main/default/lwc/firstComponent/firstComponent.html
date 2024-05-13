@@ -1,0 +1,20 @@
+<template>
+    <h1>KK Course</h1>
+    <div style="height: 300px;">
+        <lightning-datatable
+                key-field="id"
+                data={data}
+                columns={columns}>
+        </lightning-datatable>
+    </div>
+    <c-second-component second-input="Hello World From First Component"></c-second-component>
+    <h1>Country: {testObject.country.name}</h1>
+    <lightning-button label="Change Country" onclick={handleClick}></lightning-button>
+    <div for:each={data} for:item="account" key={account.Id}>
+        <p>{account.Id}</p>
+        <p>{account.Name}</p>
+        <p>{account.AccountNumber}</p>
+    </div>
+    <lightning-button label="Show/Hide 3" onclick={handleThirdComponent}></lightning-button>
+    <c-third-component lwc:if={isThird} cool-property={coolPropertyToPass}></c-third-component>
+</template>
